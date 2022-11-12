@@ -58,7 +58,7 @@ scrape_configs:
 ## Commands to run Prom in Docker Container and Restart on Reboot
 
 1. `sudo docker build -t prometheus_me .`
-1. `sudo docker run -d --restart always --network host prometheus_me`
+1. `sudo docker run -d --restart always --config.file=/home/coreyperkins/src/GitHub/promgrafexample/prometheus.yml --network host prometheus_me`
 
 ## Command to run Grafana in Docker Container and Restart on Reboot
 
